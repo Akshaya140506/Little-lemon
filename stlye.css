@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: #495E57;
+    padding: 20px;
+}
+
+.logo {
+    width: 220px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #F4CE14;
+}
+
+/* Banner */
+.banner {
+    background: #F4CE14;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h2 {
+    padding: 15px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+/* Reservation Section */
+.reservation-section {
+    background: #EDEFEE;
+    min-height: 500px;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-container {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.reservation-container h1 {
+    text-align: center;
+    color: #495E57;
+    margin-bottom: 10px;
+}
+
+.reservation-container p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #495E57;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #495E57;
+}
+
+/* Buttons */
+.reserve-btn,
+.confirm-btn {
+    width: 100%;
+    padding: 14px;
+    background: #F4CE14;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reserve-btn:hover,
+.confirm-btn:hover {
+    background: #495E57;
+    color: white;
+}
+
+/* Confirmation */
+.confirmation {
+    text-align: center;
+    padding: 60px 20px;
+    background: #EDEFEE;
+    min-height: 400px;
+}
+
+.confirmation h1 {
+    color: #495E57;
+    margin-bottom: 15px;
+}
+
+.confirmation p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #495E57;
+    color: white;
+    padding: 20px 40px;
+}
+
+.footer-logo {
+    width: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .reservation-container {
+        padding: 25px 20px;
+    }
+
+    .cards {
+        padding: 25px 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
